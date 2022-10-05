@@ -3,7 +3,7 @@ import "./index.scss";
 import Sidebar from "../Sidebar";
 import { Outlet } from "react-router-dom";
 
-const index: FC = () => {
+const Layout: FC = () => {
   return (
     <div className="App">
       <Sidebar />
@@ -22,4 +22,4 @@ const index: FC = () => {
   );
 };
 
-export default index;
+export default Layout;

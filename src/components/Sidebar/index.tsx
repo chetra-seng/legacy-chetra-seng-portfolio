@@ -11,7 +11,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
-const index: FC = () => {
+const Sidebar: FC = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
@@ -82,4 +82,4 @@ const index: FC = () => {
   );
 };
 
-export default index;
+export default Sidebar;

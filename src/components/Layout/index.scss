@@ -22,3 +22,37 @@
 .bottom-tag-html {
   margin-left: -20px;
 }
+
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.flat-button {
+  color: #ffd700;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: "sans-serif";
+  padding: 10PX 18px;
+  text-decoration: none;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+
+  &:hover {
+    background: #ffd700;
+    color: #333;
+  }
+}
