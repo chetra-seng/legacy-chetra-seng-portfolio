@@ -3,6 +3,7 @@ import "./index.scss";
 import LogoTitle from "../../assets/images/logo-s.png";
 import { Link } from "react-router-dom";
 import AnimatedLetter from "../AnimatedLetter";
+import Logo from "./Logo";
 
 const Home = () => {
   const name = "eng Chetra";
@@ -45,6 +46,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <Logo />
     </div>
   );
 };
