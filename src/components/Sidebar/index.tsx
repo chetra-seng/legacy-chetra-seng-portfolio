@@ -14,13 +14,23 @@ import {
 const Sidebar: FC = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/" style={{textDecoration: "none", textAlign: 'center'}}>
+      <Link
+        className="logo"
+        to="/"
+        style={{ textDecoration: "none", textAlign: "center" }}
+      >
         <img className="logo" src={LogoS} alt="Logo" />
         {/* <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" /> */}
         <p className="sub-logo">Chetra</p>
       </Link>
       <nav>
-        <NavLink end to={"/"} className={"active"}>
+        <NavLink
+          end
+          to={"/"}
+          className={({ isActive }) => {
+            if (isActive) return "active";
+          }}
+        >
           <FontAwesomeIcon icon={faHome} color={"#4d4d4e"} />
         </NavLink>
         <NavLink
