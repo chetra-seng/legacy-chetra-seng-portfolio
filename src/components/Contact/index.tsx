@@ -22,10 +22,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        "service_zphgjrd",
-        "template_w3mp9sl",
+        "Service_id",
+        "template_id",
         currentForm,
-        "xG5EGvRG2KbV4Brmm"
+        "public_key"
       );
       window.alert("Send message successfully.");
     } catch (err) {
@@ -50,10 +50,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            vero ipsam nisi, sapiente a mollitia ut quaerat nam quas culpa!
-            Doloribus voluptatum iste quaerat nesciunt labore error perferendis
-            dolore sequi.
+            Leave a message if you're interested in helping me achieve my dream.
+            If you leave near by, come and have a cup of coffee together ☕️
+            Talking in person is much more preferable 😉
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -64,6 +63,7 @@ const Contact = () => {
                     name={"name"}
                     placeholder="Name"
                     required
+                    autoComplete={"off"}
                   />
                 </li>
                 <li className="half">
@@ -72,6 +72,7 @@ const Contact = () => {
                     name={"email"}
                     placeholder="Email"
                     required
+                    autoComplete={"off"}
                   />
                 </li>
                 <li>
@@ -80,10 +81,16 @@ const Contact = () => {
                     name={"subject"}
                     placeholder="Subject"
                     required
+                    autoComplete={"off"}
                   />
                 </li>
                 <li>
-                  <textarea placeholder="Message" name="message" required />
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    required
+                    autoComplete="off"
+                  />
                 </li>
                 <li>
                   <input
@@ -97,21 +104,21 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Cambodia, 
+          Chetra Seng
           <br />
-          Phnom Penh,
+          E2-130, St: 143
           <br />
-          E2-130, Chamkarmon
+          Chamkarmon, Phnom Penh
           <br />
-          st: 143
+          Cambodia
           <br />
-          <span>meow@meow.meow</span>
+          <span>chetra.ballistic@gmail.com</span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[11.555287, 104.915993]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[11.555287, 104.915993]}>
-              <Popup>Meow lives here, come over for a cup of coffee</Popup>
+              <Popup>I live here, come over for a cup of coffee near by.</Popup>
             </Marker>
           </MapContainer>
         </div>

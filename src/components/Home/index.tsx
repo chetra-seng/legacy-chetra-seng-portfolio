@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./index.scss";
-import LogoTitle from "../../assets/images/logo-s.png";
+import C from "../../assets/images/C.png";
 import { Link } from "react-router-dom";
 import AnimatedLetter from "../AnimatedLetter";
 import Logo from "./Logo";
 import Loader from "react-loaders";
 
 const Home = () => {
-  const name = "eng Chetra";
-  const job = "web developer";
+  const name = "hetra Seng,";
+  const job = "developer";
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -26,21 +26,22 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt={"Logo"} />
+            <span className={`${letterClass} _14`}>'</span>
+            <span className={`${letterClass} _15`}>m</span>
+            <img src={C} alt={"Logo"} />
             <AnimatedLetter
               letterClass={letterClass}
               strArray={name.split("")}
-              idx={15}
+              idx={16}
             />
             <br />
             <AnimatedLetter
               letterClass={letterClass}
               strArray={job.split("")}
-              idx={15 + name.length}
+              idx={16 + name.length}
             />
           </h1>
-          <h2>Full-stack Developer / University Student / Nobody</h2>
+          <h2>Full-stack Developer / Smart Contract Developer / University Student</h2>
           <Link
             className="flat-button"
             to={"https://www.linkedin.com/in/chetra-s-5b4048ab/"}

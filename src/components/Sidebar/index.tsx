@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./index.scss";
-import LogoS from "../../assets/images/logo-s.png";
+import C from "../../assets/images/C.png";
 // import LogoSubtitle from "../../assets/images/logo_sub.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +19,7 @@ const Sidebar: FC = () => {
         to="/"
         style={{ textDecoration: "none", textAlign: "center" }}
       >
-        <img className="logo" src={LogoS} alt="Logo" />
+        <img className="logo" src={C} alt="Logo" />
         {/* <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" /> */}
         <p className="sub-logo">Chetra</p>
       </Link>

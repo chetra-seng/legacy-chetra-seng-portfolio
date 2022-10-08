@@ -10,6 +10,7 @@
   .logo {
     display: block;
     padding: 8px 0;
+    padding-bottom: 0;
 
     img {
       display: block;
@@ -45,7 +46,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #47B5FF;
 
         svg {
           opacity: 0;
@@ -90,7 +91,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #47B5FF;
       }
     }
   }
@@ -113,7 +114,7 @@
         line-height: 16px;
 
         &:hover svg {
-          color: #ffd700;
+          color: #47B5FF;
         }
       }
     }
