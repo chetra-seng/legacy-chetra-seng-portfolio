@@ -44,7 +44,7 @@ const Home = () => {
           <h2>Full-stack Developer / Smart Contract Developer / University Student</h2>
           <Link
             className="flat-button"
-            to={"https://www.linkedin.com/in/chetra-s-5b4048ab/"}
+            to={"/contact"}
           >
             CONTACT ME
           </Link>
