@@ -22,10 +22,10 @@ const Contact = () => {
 
     try {
       await emailjs.sendForm(
-        "service_zphgjrd",
-        "template_w3mp9sl",
+        "service_id",
+        "template_id",
         currentForm,
-        "xG5EGvRG2KbV4Brmm"
+        "public_key"
       );
       window.alert("Send message successfully.");
     } catch (err) {
