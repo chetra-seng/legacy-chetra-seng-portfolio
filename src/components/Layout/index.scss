@@ -4,41 +4,8 @@
   position: absolute;
 }
 
-.top-tags {
-  bottom: auto;
-  top: 35px;
-}
-
-.tags {
-  color: #47B5FF;
-  opacity: 0.5;
-  position: absolute;
-  left: 120px;
-  font-size: 18px;
-  font-family: "La Belle Aurore";
-}
-
 .bottom-tag-html {
   margin-left: -20px;
-}
-
-.bottom-tags {
-  top: calc(100vh - 60px);
-}
-
-.container {
-  width: 100%;
-  will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
-  opacity: 0;
-  top: 5%;
-  margin: 0 auto;
-  z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
 }
 
 .about-page, .contact-page, .notfound-page {

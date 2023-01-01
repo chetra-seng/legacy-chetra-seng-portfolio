@@ -1,5 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+import "@fontsource/la-belle-aurore"
+
 html {
   font-size: 62.5%;
+}
+
+@layer components {
+  .tags {
+    @apply text-blue-400 absolute left-28 text-lg font-la-belle-aurore
+  }
+  .container {
+    @apply w-screen will-change-contents h-[90%] min-h-[32rems] opacity-0 top-[5%] mx-0 my-auto z-10 animate-fadeIn animation-delay-1000
+  }
 }
 
 body {
