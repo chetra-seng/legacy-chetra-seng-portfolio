@@ -8,11 +8,11 @@ const Layout: React.FC = () => {
     <div className="App">
       <Sidebar />
       <div className="absolute w-screen h-screen">
-        <span className="tags bottom-auto top-12">&lt;body&gt;</span>
+        <span className="tags bottom-auto top-12 left-64">&lt;body&gt;</span>
 
         <Outlet />
 
-        <span className="tags top-[calc(100vh_-_80px)]">
+        <span className="tags top-[calc(100vh_-_80px)] left-64">
           &lt;/body&gt;
           <br />
           <span className=" ml-[-1.5rem]">&lt;html&gt;</span>
