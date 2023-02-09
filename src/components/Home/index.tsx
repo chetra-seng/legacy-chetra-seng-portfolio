@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./index.scss";
 import C from "../../assets/images/C.png";
 import { Link } from "react-router-dom";
 import AnimatedLetter from "../AnimatedLetter";
