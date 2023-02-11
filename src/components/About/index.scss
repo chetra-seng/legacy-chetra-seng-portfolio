@@ -4,21 +4,21 @@
   animation-iteration-count: infinite;
   animation-duration: 12s;
   transform-style: preserve-3d;
-  transform-origin: 100px 100px 0;
-  margin-left: calc(50% - 100px);
+  transform-origin: 50px 50px 0;
+  margin-left: calc(50% - 200px);
 
   img {
-    width: 100px;
+    width: 50px;
   }
 
   div {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border: 1px solid #ccc;
     background: rgba(255, 255, 255, 0.4);
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,22 +26,58 @@
   }
 
   .face1 {
-    transform: translateZ(100px);
+    transform: translateZ(50px);
   }
   .face2 {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(50px);
   }
   .face3 {
-    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
   }
   .face4 {
-    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
   }
   .face5 {
-    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
   }
   .face6 {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(50px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cubespinner {
+    transform-origin: 100px 100px 0;
+    margin-left: calc(50% - 100px);
+  
+    img {
+      width: 100px;
+    }
+  
+    div {
+      width: 200px;
+      height: 200px;
+      font-size: 100px;
+    }
+  
+    .face1 {
+      transform: translateZ(100px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
   }
 }
 

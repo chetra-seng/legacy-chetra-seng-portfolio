@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const Logo = () => {
   return (
-    <div className="w-[50%] flex justify-center">
+    <div className="md:w-[50%] flex justify-center">
       <motion.div
-        className="z-0 w-80 h-80 flex flex-col animate-fadeIn"
+        className="z-0 w-40 h-40 md:w-80 md:h-80 flex flex-col animate-fadeIn"
         style={{ backgroundImage: `url(${Blob})` }}
         initial={{ scale: 0.2, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

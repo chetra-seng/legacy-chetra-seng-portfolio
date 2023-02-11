@@ -13,9 +13,9 @@ import {
 
 const Sidebar: FC = () => {
   return (
-    <div className="min-h-screen w-16 flex flex-col justify-between bg-[#181818] items-center z-10">
+    <div className="h-10 md:min-w-screen md:min-h-screen md:w-16 flex flex-row justify-center md:flex-col md:justify-between md:bg-[#181818] items-center z-10">
       <Link
-        className="flex flex-col justify-center items-center self-center mt-4"
+        className="hidden md:flex md:flex-col justify-center items-center self-center mt-4"
         to="/"
         style={{ textDecoration: "none", textAlign: "center" }}
       >
@@ -25,7 +25,7 @@ const Sidebar: FC = () => {
           Chetra
         </p>
       </Link>
-      <nav className="flex flex-col gap-6 text-2xl justify-center items-center self-center">
+      <nav className="flex flex-row md:flex-col gap-12 md:gap-6 text-2xl justify-center items-start bg-[#181818] py-4 px-8 mb-6 md:mb-0 md:p-0 md:bg-transparent md:items-center self-center rounded-full md:rounded-none">
         <NavLink
           end
           to={"/"}
@@ -50,7 +50,7 @@ const Sidebar: FC = () => {
           <FontAwesomeIcon icon={faEnvelope} color={"#4d4d4e"} />
         </NavLink>
       </nav>
-      <ul className="flex flex-col text-base mb-6 gap-2">
+      <ul className="hidden md:flex md:flex-col text-base mb-6 gap-2">
         <li>
           <a
             target={"_blank"}
