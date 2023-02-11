@@ -62,7 +62,7 @@ const Home: React.FC = () => {
               <motion.h2
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 1.2, delay: 2 }}
+                transition={{ duration: 0.8, delay: 2 }}
                 className="text-gray-200 font-normal font-sans-serif text-xs tracking-widest"
               >
                 Full-stack Developer / Smart Contract Developer / University
@@ -72,7 +72,7 @@ const Home: React.FC = () => {
             <motion.div
               initial={{ y: 200, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1.2, delay: 2.3 }}
+              transition={{ duration: 0.8, delay: 2.3 }}
             >
               <Link
                 className="text-[#47B5FF] text-base font-normal space-x-1 py-3 px-5 no-underline border-[1px] border-solid border-[#47B5FF] hover:bg-[#47B5FF] hover:text-[#333] w-44 text-center"

@@ -43,7 +43,7 @@ const About = () => {
               <motion.p
                 initial={{ opacity: 0, y: 200, scaleY: 0.5 }}
                 animate={{ opacity: 1, y: 0, scaleY: 1 }}
-                transition={{ duration: 1, delay: 1.2 }}
+                transition={{ duration: 0.8, delay: 1.8 }}
               >
                 Currently a full-stack developer at Techo Startup Center, and a
                 fourth year university student at Royal University of Phnom
@@ -54,7 +54,7 @@ const About = () => {
               <motion.p
                 initial={{ opacity: 0, y: 200, scaleY: 0.5 }}
                 animate={{ opacity: 1, y: 0, scaleY: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
+                transition={{ duration: 0.8, delay: 2.1 }}
               >
                 Experienced working with different languages such as Python,
                 Java, Javascript, Typescript and Solidity. Have used front-end
@@ -65,7 +65,7 @@ const About = () => {
               <motion.p
                 initial={{ opacity: 0, y: 200, scaleY: 0.5 }}
                 animate={{ opacity: 1, y: 0, scaleY: 1 }}
-                transition={{ duration: 1, delay: 1.8 }}
+                transition={{ duration: 0.8, delay: 2.4 }}
               >
                 Dream of becoming a software engineer by building up skills,
                 following the best practice and design patterns. Interested in

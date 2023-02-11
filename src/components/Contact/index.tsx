@@ -53,7 +53,7 @@ const Contact = () => {
                   <motion.li
                     initial={{ y: 200, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 2 }}
+                    transition={{ duration: 1, delay: 1.5 }}
                   >
                     <motion.a
                       href="https://github.com/chetra-seng"
@@ -67,7 +67,7 @@ const Contact = () => {
                   <motion.li
                     initial={{ y: 200, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 2.5 }}
+                    transition={{ duration: 1, delay: 2 }}
                   >
                     <motion.a
                       href="https://www.linkedin.com/in/chetra-s-5b4048ab/"
@@ -81,7 +81,7 @@ const Contact = () => {
                   <motion.li
                     initial={{ y: 200, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 1, delay: 3 }}
+                    transition={{ duration: 1, delay: 2.5 }}
                   >
                     <motion.a
                       href="https://web.facebook.com/chetraseng11"
