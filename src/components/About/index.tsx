@@ -25,7 +25,7 @@ const About = () => {
     }, 3000);
   }, []);
   return (
-    <div className="w-screen flex justify-center">
+    <div className="w-full flex justify-center">
       <div className="h-screen flex flex-col justify-center">
         <motion.div
           className="max-lg:flex-col max-w-5xl self-center home-page flex flex-row justify-between items-center"

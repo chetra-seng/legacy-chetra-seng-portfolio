@@ -24,7 +24,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-screen flex justify-center">
+    <div className="w-full flex justify-center">
       <div className="h-screen flex flex-col justify-center">
         <motion.div
           className="max-lg:flex-col max-w-7xl self-center home-page flex flex-row justify-between items-center gap-20"

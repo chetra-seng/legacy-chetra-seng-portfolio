@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 const Layout: React.FC = () => {
   return (
-    <div className="App">
+    <div className="flex flex-row">
       <Sidebar />
-      <div className="absolute w-screen h-screen">
+      <div className="w-full h-screen">
         <span className="tags bottom-auto top-12 left-64">&lt;body&gt;</span>
 
         <Outlet />

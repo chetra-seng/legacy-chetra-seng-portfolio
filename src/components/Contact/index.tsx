@@ -21,7 +21,7 @@ const Contact = () => {
     }, 3000);
   }, []);
   return (
-    <div className="w-screen flex justify-center">
+    <div className="w-full flex justify-center">
       <motion.div
         className="h-screen flex flex-col justify-center"
         {...pageDelay}

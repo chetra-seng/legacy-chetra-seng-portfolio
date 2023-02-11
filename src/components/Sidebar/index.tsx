@@ -13,37 +13,27 @@ import {
 
 const Sidebar: FC = () => {
   return (
-    <div className="nav-bar">
+    <div className="min-h-screen w-16 flex flex-col justify-between bg-[#181818] items-center z-10">
       <Link
-        className="logo"
+        className="flex flex-col justify-center items-center self-center mt-4"
         to="/"
         style={{ textDecoration: "none", textAlign: "center" }}
       >
-        <img className="logo" src={C} alt="Logo" />
+        <img className="w-6 my-2 h-auto" src={C} alt="Logo" />
         {/* <img className="sub-logo" src={LogoSubtitle} alt="sub-logo" /> */}
-        <p className="sub-logo">Chetra</p>
+        <p className="text-white text-[0.75rem] tracking-widest font-medium">
+          Chetra
+        </p>
       </Link>
-      <nav>
+      <nav className="flex flex-col gap-6 text-2xl justify-center items-center self-center">
         <NavLink
           end
           to={"/"}
-          className={({ isActive }) => {
-            if (isActive) return "active";
-          }}
+          className={({ isActive }) => (isActive ? "active" : "")}
         >
           <FontAwesomeIcon icon={faHome} color={"#4d4d4e"} />
         </NavLink>
-        <NavLink
-          end
-          to={"/about"}
-          className={({ isActive }) => {
-            const classnames = ["about-link"];
-            if (isActive) {
-              classnames.push("active");
-            }
-            return classnames.join(" ");
-          }}
-        >
+        <NavLink end to={"/about"}>
           <FontAwesomeIcon icon={faUser} color={"#4d4d4e"} />
         </NavLink>
         <NavLink
@@ -60,7 +50,7 @@ const Sidebar: FC = () => {
           <FontAwesomeIcon icon={faEnvelope} color={"#4d4d4e"} />
         </NavLink>
       </nav>
-      <ul>
+      <ul className="flex flex-col text-base mb-6 gap-2">
         <li>
           <a
             target={"_blank"}
